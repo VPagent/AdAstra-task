@@ -3,7 +3,7 @@ const button = document.querySelector(".wetherButton");
 
 const handleClick = () => {
   const wetherClasses = wetherWidget.className;
-  console.log(wetherClasses);
+
   if (wetherClasses.includes("isOpen")) {
     wetherWidget.className = "wether";
     return;
