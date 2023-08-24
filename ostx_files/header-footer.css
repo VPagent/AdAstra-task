@@ -1,0 +1,296 @@
+.headerSection {
+  position: sticky;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #292c33;
+  display: flex;
+  flex-direction: column;
+  font-family: "Catamaran", sans-serif;
+}
+
+.wether {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  opacity: 0;
+  height: 0px;
+  overflow: hidden;
+  transition: opacity 250ms ease-in-out;
+}
+
+.wether.isOpen {
+  height: auto;
+  overflow: visible;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  opacity: 1;
+}
+
+.wetherButton {
+  position: absolute;
+  bottom: -60px;
+  right: 20px;
+  z-index: 4;
+
+  padding: 10px 20px;
+
+  background-color: black;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.contentWrapper {
+  display: flex;
+  width: 100%;
+  height: 60px;
+
+  /* max-width: 1010px; */
+  margin: 0 auto;
+  text-align: left;
+  position: relative;
+  box-sizing: border-box;
+
+  @media screen and (min-width: 700px) {
+    height: 80px;
+  }
+}
+
+.headerWithoutAntena {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.antenaMobileWrapper {
+  background-color: black;
+  font-weight: 700;
+
+  @media screen and (min-width: 700px) {
+    display: none;
+  }
+}
+
+.antenaLinkMobile {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 45px;
+
+  color: white;
+}
+
+.antenaLinkMobile:hover,
+.antenaLinkMobile:focus {
+  color: white;
+  cursor: pointer;
+}
+.antenaLink {
+  display: none;
+  @media screen and (min-width: 700px) {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+}
+
+.antenaIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+
+  fill: white;
+}
+
+.antenaText {
+  padding-top: 2px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 0px;
+
+  font-family: "Catamaran", sans-serif;
+  line-height: 1.2;
+  font-size: 12px;
+  text-align: left;
+  font-weight: 700;
+  color: white;
+
+  @media screen and (min-width: 700px) {
+    width: 260px;
+    padding-right: 16px;
+    padding-left: 0px;
+  }
+}
+
+.headerWithoutAntena {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+}
+
+.iconLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 40px;
+  height: 40px;
+  fill: white;
+  color: white;
+
+  font-weight: 800;
+  font-size: 12px;
+
+  @media screen and (min-width: 700px) {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.burgerLink {
+  margin-right: auto;
+  @media screen and (min-width: 700px) {
+    margin-right: 0px;
+  }
+}
+
+.menuIcon {
+  display: block;
+  height: 100%;
+  @media screen and (min-width: 700px) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.menuText {
+  display: none;
+  @media screen and (min-width: 700px) {
+    display: block;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    font-weight: 800;
+  }
+}
+
+.searchLink {
+  margin-left: auto;
+  @media screen and (min-width: 700px) {
+    margin-left: 35px;
+    margin-right: auto;
+  }
+}
+
+.searchText {
+  display: none;
+  @media screen and (min-width: 700px) {
+    display: block;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    font-weight: 800;
+  }
+}
+
+.cnnLinkMobile {
+  @media screen and (min-width: 700px) {
+    display: none;
+  }
+}
+
+.cnnLink {
+  display: none;
+  @media screen and (min-width: 700px) {
+    display: block;
+    margin-right: auto;
+  }
+}
+
+.cnnImage {
+  display: block;
+  width: 45px;
+  height: auto;
+}
+
+.footer {
+  background-color: #292c33;
+  padding: 20px 0;
+  text-align: center;
+
+  font-family: "Catamaran", sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 700;
+  color: white;
+}
+
+.footerContentWrapper {
+  padding: 20px 0px 10px 10px;
+}
+
+.footerCopyPast {
+  margin-bottom: 0px;
+}
+
+.footerLinks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footerLink {
+  color: white;
+
+  transition: text-decoration 250ms ease-in-out;
+}
+
+.footerLink:hover,
+.footerLink:focus {
+  text-decoration: underline;
+  color: white;
+}
+
+.buttonLink {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: 1px solid #fff;
+}
+
+.footerBottomLinks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.footerBottomLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 198px;
+  height: 50px;
+  border-radius: 20px;
+  border: 1px solid #fff;
+  color: white;
+
+  transition: border 250ms ease-in-out, font-size 250ms ease-in-out;
+}
+
+.footerBottomLink:hover,
+.footerBottomLink:focus {
+  border: 1px solid #fff;
+  font-size: 20px;
+  color: #fff;
+}
+
+.footerBottomLink:first-of-type {
+  margin-right: 4px;
+}
